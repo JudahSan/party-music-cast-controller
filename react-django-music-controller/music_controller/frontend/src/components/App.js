@@ -13,11 +13,11 @@ export default class App extends Component {
         }
           }
     render() {
-        return (<div>
+        return (
+        <div>
             <HomePage/>
-           
-
-        </div>);
+        </div>
+        );
     }
 }
 const appDiv = document.getElementById("app");
