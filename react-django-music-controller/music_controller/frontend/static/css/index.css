@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-image: linear-gradient(180deg, blue,red);
+    background-image: linear-gradient(180deg, green,white);
     padding: 0;
     color: white;
 }
