@@ -11,5 +11,6 @@ Each component in React has a lifecycle which you can monitor and manipulate dur
 
 <em>
 <strong>Asynchronous programming
-</strong>  is a technique that enables your program to start a potentially long-running task, and then rather than having to wait until that task has finished, to be able to continue to be responsive to other events while the task runs.</em>
+</strong>  is a technique that enables your program to start a potentially long-running task, and then rather than having to wait until that task has finished, to be able to continue to be responsive to other events while the task runs.</em><br>
+
 [Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
