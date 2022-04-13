@@ -16,6 +16,12 @@ export default class HomePage extends Component {
     super(props);
   }
 
+  // Life cycle methods
+  // perform asynchronous operation inside Didmount
+  async componentDidMount() {
+
+  }
+
   renderHomePage() {
     return(
       <Grid container spacing={3}>
