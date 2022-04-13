@@ -5,6 +5,7 @@ from .serializers import RoomSerializer, CreateRoomSerializer
 from .models import Room
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from django.http import JsonResponse
 
 
 # Create your views here.
@@ -89,4 +90,4 @@ class UserInRoom(APIView):
         data = {
             'code': self.request.session.get('room_code')
         }
-        return JsonResponse()
+        return JsonResponse(data, status=status.HTTP_200_OK)

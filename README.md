@@ -13,4 +13,14 @@ Each component in React has a lifecycle which you can monitor and manipulate dur
 <strong>Asynchronous programming
 </strong>  is a technique that enables your program to start a potentially long-running task, and then rather than having to wait until that task has finished, to be able to continue to be responsive to other events while the task runs.</em><br>
 
+
 [Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
+
+<strong>JDjango JsonResponse
+</strong>
+<br>
+JsonResponse is an HttpResponse subclass that helps to create a JSON-encoded response. Its default Content-Type header is set to application/json. The first parameter, data , should be a dict instance. If the safe parameter is set to False, any object can be passed for serialization; otherwise only dict instances are allowed.
+<br>
+
+[Request and response objects¶](https://docs.djangoproject.com/en/4.0/ref/request-response/)<br>
+[Django JsonResponse](https://zetcode.com/django/jsonresponse/)<br>
