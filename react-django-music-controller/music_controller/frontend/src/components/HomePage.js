@@ -14,7 +14,7 @@ import {
 export default class HomePage extends Component {
   constructor(props) {
     super(props);
-    this.setState = {
+    this.state = {
       roomCode: null,
     };
   }
