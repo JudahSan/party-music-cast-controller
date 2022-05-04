@@ -14,7 +14,6 @@ export default class Room extends Component {
       showSettings: false,
     };
     this.roomCode = this.props.match.params.roomCode;
-    this.getRoomDetails();
     this.leaveButtonPressed = this.leaveButtonPressed.bind(this);
     this.updateShowSettings = this.updateShowSettings.bind(this);
     this.renderSettingsButton = this.renderSettingsButton.bind(this);
@@ -68,7 +67,7 @@ export default class Room extends Component {
           update={true}
           votesToSkip = { this.state.votesToSkip }
           guestCanPause={ this.state.guestCanPause }
-          roomCode={ this.state.roomCode }
+          roomCode={ this.roomCode }
           updateCallback={this.getRoomDetails}
           />
       </Grid>
