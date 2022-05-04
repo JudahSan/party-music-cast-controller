@@ -19,6 +19,8 @@ export default class Room extends Component {
     this.updateShowSettings = this.updateShowSettings.bind(this);
     this.renderSettingsButton = this.renderSettingsButton.bind(this);
     this.renderSettings = this.renderSettings.bind(this);
+    this.getRoomDetails = this.getRoomDetails.bind(this);
+    this.getRoomDetails();
   }
 
   getRoomDetails() {
@@ -60,7 +62,7 @@ export default class Room extends Component {
   }
 
   renderSettings() {
-    return <Grid container spacing={1}>
+    return (<Grid container spacing={1}>
       <Grid items xs={12} align="center">
         <CreateRoomPage
           Update={true}
@@ -78,7 +80,7 @@ export default class Room extends Component {
           Close
         </Button>
       </Grid>
-    </Grid>;
+    </Grid>);
   }
 
 

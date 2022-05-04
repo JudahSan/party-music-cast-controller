@@ -70,7 +70,7 @@ export default class CreateRoomPage extends Component {
       body: JSON.stringify({
         votes_to_skip: this.state.votesToSkip,
         guest_can_pause: this.state.guestCanPause,
-        code: this.props.roomCode
+        code: this.props.roomCode,
       }),
     };
     fetch("/api/UPDATE-room", requestOptions)
@@ -126,7 +126,7 @@ export default class CreateRoomPage extends Component {
   }
 
   render() {
-    const title = this.props.update ? "Update Room" : "Create a Room"
+    const title = this.props.update ? "Update Room" : "Create a Room";
 
     return (
       <Grid container spacing={1}>
