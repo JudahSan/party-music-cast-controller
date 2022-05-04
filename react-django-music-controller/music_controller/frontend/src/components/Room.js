@@ -65,7 +65,7 @@ export default class Room extends Component {
     return (<Grid container spacing={1}>
       <Grid items xs={12} align="center">
         <CreateRoomPage
-          Update={true}
+          update={true}
           votesToSkip = { this.state.votesToSkip }
           guestCanPause={ this.state.guestCanPause }
           roomCode={ this.state.roomCode }
@@ -110,17 +110,17 @@ export default class Room extends Component {
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">
-        <Typography variant="h9" component="h9">
+        <Typography variant="h6" component="h9">
           Votes: {this.state.votesToSkip}
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">
-        <Typography variant="h9" component="h9">
+        <Typography variant="h6" component="h6">
           Guest Can Pause: {this.state.guestCanPause.toString()}
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">
-        <Typography variant="h9" component="h9">
+        <Typography variant="h6" component="h6">
           Host: {this.state.isHost.toString()}
           </Typography>
         </Grid>
@@ -130,13 +130,11 @@ export default class Room extends Component {
           <Button 
           variant="contained" 
           color="secondary" 
-          onClick={ this.leaveButtonPressed }>
+          onClick={this.leaveButtonPressed}>
             Leave Room
           </Button>
         </Grid>
       </Grid>
-
-      
     );
   }
 }

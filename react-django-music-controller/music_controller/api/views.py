@@ -123,12 +123,12 @@ class UpdateRoom(APIView):
 
             queryset = Room.objects.filter(code=code)
             if not queryset.exists():
-                return Response({'msg': 'Room does not exist.'}, status=status.HTTP_404_NOT_FOUND)
+                return Response({'msg': 'Room not found.'}, status=status.HTTP_404_NOT_FOUND)
 
             room = queryset[0]
             user_id = self.request.session.session_key
             if room.host != user_id:
-                return Response({'msg': 'Away stranger! You are not the host of this room.'}, status=status.HTTP_403_FORBIDDEN)
+                return Response({'msg': 'You are not the host of this room.'}, status=status.HTTP_403_FORBIDDEN)
 
             room.guest_can_pause = guest_can_pause
             room.votes_to_skip = votes_to_skip

@@ -10,7 +10,7 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { Collapse } from "@material-ui/core";
-import Alert from "@material-ui/lab/Alert"
+import Alert from "@material-ui/lab/Alert";
 
 export default class CreateRoomPage extends Component {
   static defaultProps = {
@@ -73,24 +73,20 @@ export default class CreateRoomPage extends Component {
         code: this.props.roomCode,
       }),
     };
-    fetch("/api/UPDATE-room", requestOptions)
+    fetch("/api/update-room", requestOptions)
       .then((response) => {
         if (response.ok) {
           this.setState({
-            successMsg : "Room Updated Scuccessfully!"
+            successMsg : "Room Updated Scuccessfully!",
           });
         } else {
           this.setState({
-            errorMsg : "Error Updating Room..."
+            errorMsg : "Error Updating Room...",
           });
 
         }
         this.props.updateCallback();
-      });
-      
-      
-
-    
+      }); 
   }
 
   renderCreateButtons() {
