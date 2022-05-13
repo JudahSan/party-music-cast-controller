@@ -24,3 +24,11 @@ JsonResponse is an HttpResponse subclass that helps to create a JSON-encoded res
 
 [Request and response objects¶](https://docs.djangoproject.com/en/4.0/ref/request-response/)<br>
 [Django JsonResponse](https://zetcode.com/django/jsonresponse/)<br>
+<br>
+
+Authorize against the Spotify API
+Using and storing authorization and access tokens<br>
+[Authorization guide](https://developer.spotify.com/documentation/general/guides/authorization/)<br>
+[Web API](https://developer.spotify.com/documentation/web-api/)<br>
+[Web API Quick Start](https://developer.spotify.com/documentation/web-api/quick-start/)<br>
+[Dev Dashboard](https://developer.spotify.com/dashboard/applications)<br>
