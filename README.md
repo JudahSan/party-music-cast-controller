@@ -2,6 +2,11 @@
 
 A collaborative music playing system
 
+## Requirements
+
+- Spotify premium
+- Users must be connect to the same network
+
 
 ## Tips
 ### React Lifecycle
@@ -88,7 +93,7 @@ The **executePoll** function is also declared as **async** so we can easily exec
 
 2. The example below is once you can paste into a JavaScript file locally and run it using node. It takes the same poll function we built in the previous section and applies it to a fake API request. It simulates waiting for a user to be created, which in this case will happen after 12 seconds. We poll the mock API every second until it returns a user which then resolves to our chained then function.
 
-```
+```js
 const poll = ({ fn, validate, interval, maxAttempts }) => {
   console.log('Start poll...');
   let attempts = 0;
